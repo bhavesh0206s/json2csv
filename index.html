@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>JSON2CSV</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="title">
+            <h1>JSON to CSV Converter</h1>
+            <h2>Paste Your JSON Below</h2>
+            <p>Add JSON into an Array as shown (Nested JSON not supported)</p>
+        </div>
+        <textarea name="json" id="json" cols="100" rows="15">[{"Id":1,"UserName":"Sam Smith"},
+{"Id":2,"UserName":"Fred Frankly"},
+{"Id":1,"UserName":"Zachary Zupers"}]
+        </textarea>
+        <div>
+            <input type="file" name="Json-File" id="json-file">
+        </div>
+        <div class="buttons">
+            <input id="quote" type="checkbox" checked="true" /> Wrap values in double quotes
+            <br />
+            <input id="labels" type="checkbox" checked="true" /> Include labels in first row
+            <br />
+            <button class="convert-csv">Convert to CSV</button>
+            <button class="download-csv"><a id="download_link" download="data.csv" href="">Download</a></button>
+        </div>
+        <div class="csv">
+            <span id="csv"></span>
+        </div>
+        <footer>
+            Made by Bhavesh
+        </footer>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

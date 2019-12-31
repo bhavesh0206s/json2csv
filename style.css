@@ -1,0 +1,22 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+.csv{
+    position: relative;
+    overflow: auto;
+    border: 1px solid black;
+    width: 737.64px;
+    height: 246px;
+    padding: 10px;
+}
+span{
+    position: relative;
+}
+.title{
+    text-align: center;
+}
+#download_link{
+    color:inherit;
+    text-decoration: none;
+}
